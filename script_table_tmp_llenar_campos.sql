@@ -1,0 +1,17 @@
+CREATE TABLE TMP_LLENAR_CAMPOS (
+id_company  INT ,
+codigo_company VARCHAR(45),
+name_company VARCHAR(45),
+description_company VARCHAR(45),
+version_id INT,
+app_id_r INT,
+version  VARCHAR(45),
+version_description VARCHAR(45),
+version_company_id INT,
+company_id_r  INT,
+version_id_r  INT,
+version_company_description VARCHAR(45),
+app_id  INT,
+app_code VARCHAR(45),
+app_name VARCHAR(45),
+app_description VARCHAR(45) );
