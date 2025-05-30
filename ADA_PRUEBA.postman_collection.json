@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "90a3a3aa-b52e-4f00-aafc-6e844e889892",
+		"name": "ADA_PRUEBA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10001653"
+	},
+	"item": [
+		{
+			"name": "Algoritmos",
+			"item": [
+				{
+					"name": "Calculadora",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/ada/algoritmos?operacion=MULTIPLICACION&valor1=64&valor2=81",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ada",
+								"algoritmos"
+							],
+							"query": [
+								{
+									"key": "operacion",
+									"value": "MULTIPLICACION"
+								},
+								{
+									"key": "valor1",
+									"value": "64"
+								},
+								{
+									"key": "valor2",
+									"value": "81"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadenas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/ada/algoritmos?operacion=MULTIPLICACION&valor1=64&valor2=81",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ada",
+								"algoritmos"
+							],
+							"query": [
+								{
+									"key": "operacion",
+									"value": "MULTIPLICACION"
+								},
+								{
+									"key": "valor1",
+									"value": "64"
+								},
+								{
+									"key": "valor2",
+									"value": "81"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ObtenerCompanys",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ada/company",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ada",
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerCompanys By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ada/company/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ada",
+						"company",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar/Actualizar Company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id_company\": 3,\r\n        \"codigo_company\": \"API_001\",\r\n        \"name_company\": \"API LOAD 2\",\r\n        \"description_company\": \"REGISTRO DESDE API\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ada/company",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ada",
+						"company"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
